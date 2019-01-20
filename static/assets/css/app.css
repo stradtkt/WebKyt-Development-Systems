@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Marmelad');
+
+
+body {
+    background: #cccccc;
+}
+.navbar {
+    background: #2F3B4B;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+    position: relative;
+    top: 9px;
+}
+.Home {
+    background: url('../img/background-1-1.jpg') 50% 0 repeat fixed;
+    background-size: cover;
+    height: 600px;
+}
+.Contact {
+    background: url('../img/office-1.jpg') 50% 0 repeat fixed;
+    background-size: cover;
+    height: 300px;
+}
+.Portfolio {
+    background: url('../img/grey-white-pattern-1.jpg') 50% 0 repeat fixed;
+    background-size: cover;
+    height: 600px;
+}
+.Services {
+    background: url('../img/background-2-2.jpg') 50% 0 repeat fixed;
+    background-size: cover;
+    height: 600px;
+}
+.header-box {
+    background: #777;
+    opacity: 0.6;
+    display: block;
+    position: relative;
+    top: 200px;
+    height: 120%;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 3px 3px 5px rgba(50,50,50,1);
+    -webkit-box-shadow: 3px 3px 5px rgba(50,50,50,1);
+    -moz-box-shadow: 3px 3px 5px rgba(50,50,50,1);
+    -ms-box-shadow: 3px 3px 5px rgba(50,50,50,1);
+    -o-box-shadow: 3px 3px 5px rgba(50,50,50,1);
+}
+.Home .header-box,
+.Services .header-box {
+    width: 80%;
+}
+.header-p,
+.header-h1 {
+    font-weight: 800;
+    color: dodgerblue;
+}
+
+.contact-header-p,
+.contact-header-h1 {
+    position: relative;
+    top: 100px;
+}
+#About .card {
+    background: rgba(47, 59, 75, 0.5);
+    color: white;
+    border-radius: 6px !important;
+    -webkit-border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    -ms-border-radius: 6px !important;
+    -o-border-radius: 6px !important;
+    box-shadow: 3px 3px 5px rgba(50,50,50,1) !important;
+    -webkit-box-shadow: 3px 3px 5px rgba(50,50,50,1) !important;
+    -moz-box-shadow: 3px 3px 5px rgba(50,50,50,1) !important;
+    -ms-box-shadow: 3px 3px 5px rgba(50,50,50,1) !important;
+    -o-box-shadow: 3px 3px 5px rgba(50,50,50,1) !important;
+}
+#footer {
+    background: #2F3B4B;
+}
+video {
+    position: relative;
+    bottom: 80px;
+}
+#overlay-videos {
+    top: 350px;
+}
+.active {
+    color: dodgerblue;
+    font-weight: 700;
+}
+.flashes .success {
+    background: green;
+    padding: 10px;
+    list-style-type: none;
+}
+.flashes .danger {
+    background: red;
+    padding: 10px;
+    list-style-type: none;
+    display: block;
+}
+.flashes li {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+.required {
+    color: red;
+}
+.skills {
+    background: rgba(47, 59, 75, 0.5);
+    color: white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 3px 3px 5px rgba(50,50,50,1);
+    -webkit-box-shadow: 3px 3px 5px rgba(50,50,50,1);
+    -moz-box-shadow: 3px 3px 5px rgba(50,50,50,1);
+    -ms-box-shadow: 3px 3px 5px rgba(50,50,50,1);
+    -o-box-shadow: 3px 3px 5px rgba(50,50,50,1);
+}
+.web .nav,
+section footer .nav {
+    display: block;
+    text-align: center;
+}
+.web .nav li a  {
+    padding: 0;
+    color: dodgerblue;
+    font-weight: 700;
+    font-size: 120%;
+}
+.web .nav li a:hover,
+section footer .nav li a:hover {
+    color: white;
+    text-shadow: 2px 2px 3px dodgerblue;
+    font-weight: 700;
+    transition-duration: .4s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.fa-linkedin,
+.fa-github {
+    font-size: 4em;
+}
+.fa-money-bill-alt,
+.fa-tools,
+.fa-concierge-bell,
+.fa-rocket {
+    perspective-origin: 100%;
+    perspective: 100px;
+}
+.fa-linkedin:hover,
+.fa-github:hover {
+    color: whitesmoke;
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+.fa-rocket:hover {
+    transform: rotate(-43deg) scale(2);
+    color: red;
+    transition: all 0.4s ease-in-out;
+    transition-delay: .1s;
+}
+.fa-concierge-bell:hover {
+    transform: rotate(360deg) scale(2);
+    color: gold;
+    transition: all 0.4s ease-in-out;
+    transition-delay: .1s;
+}
+.fa-tools:hover {
+    transform: scale(2);
+    color: #777;
+    transition: all 0.4s ease-in-out;
+    transition-delay: .1s;
+}
+.fa-money-bill-alt:hover {
+    transform: scale(2) rotateY(360deg) rotateX(360deg);
+    color: green;
+    transition: all 0.6s ease-in-out;
+    transition-delay: .1s;
+}
+.skills .lang p,
+.skills .web p {
+    font-size: 90%;
+    font-family: 'Marmelad', sans-serif;
+}
+.skills .web ul span {
+    font-size: 80%;
+    font-family: 'Marmelad', sans-serif;
+}
+.services-tlt-p,
+.services-tlt-h1 {
+    color: white;
+}

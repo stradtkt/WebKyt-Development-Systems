@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+{% block title %} Portfolio of WebKyt Development Systems | Freelancer Cincinnati Ohio | {{super()}} {% endblock %}
+{% block content %}
+
+<section class="Portfolio" data-type="background" data-speed="3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="header-box">
+                    <h1 class="text-center header-h1" data-aos="zoom-out-down" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">Portfolio</h1>
+                    <p class="text-center header-p" data-aos="fade-left" data-aos-offset="200" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">Web Development &amp; Full Stack Development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Portfolio">
+    <div id="grid-gallery" class="grid-gallery">
+        <section class="grid-wrap">
+            <ul class="grid">
+                <li class="grid-sizer"></li><!-- for Masonry column width -->
+                {% for portfolio in portfolios %}
+                <li>
+                    <figure>
+                        <img src="/static/assets/img/{{portfolio.img}}" alt=""/>
+                        <figcaption>
+                            <h3>{{portfolio.name}}</h3>
+                            <p>{{portfolio.desc}}</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section class="slideshow">
+            <ul>
+                {% for portfolio in portfolios %}
+                <li id="overlay-videos">
+                    <figure>
+                        <figcaption>
+                            <p><strong>Languages</strong></p>
+                            <span> {{portfolio.languages[0]}}</span>
+                            <span> {{portfolio.languages[1]}}</span>
+                            <span> {{portfolio.languages[2]}}</span>
+                            <span> {{portfolio.languages[3]}}</span>
+                            <span> {{portfolio.languages[4]}}</span>
+                        </figcaption>
+                        <video width="100%" height="100%" controls>
+                                <source src="/static/assets/video/{{portfolio.video}}" type="video/mp4">
+                              Your browser does not support the video tag.
+                        </video> 
+                    </figure>
+                </li>
+                {% endfor %}
+            </ul>
+            <nav>
+                <span class="icon nav-prev"></span>
+                <span class="icon nav-next"></span>
+                <span class="icon nav-close"></span>
+            </nav>
+        </section>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,137 @@
+{% extends 'layout.html' %}
+{% block title %} Request a Quote From The Professionals | Freelancer Cincinnati Ohio | {{super()}} {% endblock %}
+{% block content %}
+
+<section class="Contact" data-type="background" data-speed="3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h1 class="text-center contact-header-h1" data-aos="zoom-out-down" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">Request A Quote</h1>
+                <p class="text-center contact-header-p" data-aos="fade-left" data-aos-offset="200" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">Web Development &amp; Full Stack Development</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                  <ul class="flashes">
+                    {% for category, message in messages %}
+                      <li class="{{ category }}">{{ message }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              {% endwith %}
+        </div>
+    </div>
+</div>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="card mt-5 mb-5 p-3">
+                    <div class="card-header text-center mt-5 mb-5">
+                        <h1>Request A Quote</h1>
+                        <span class="required">* = required field</span>
+                    </div>
+                    <div class="card-body">
+                        <form action="quote" method="POST">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="first_name">First Name</label> <small class="required">* <i>can only be characters</i></small>
+                                    <input type="text" name="first_name" id="first_name" class="form-control">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="last_name">Last Name</label> <small class="required">* <i>can only be characters</i></small>
+                                    <input type="text" name="last_name" id="last_name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="company">Company Name</label> <small class="required">*</small>
+                                    <input type="text" name="company" id="company" class="form-control">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="quote_email">Email</label> <small class="required">*</small>
+                                    <input type="email" name="quote_email" id="quote_email" class="form-control">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="phone">Phone Number</label> <small class="required">*</small>
+                                    <input type="tel" name="phone" id="phone" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="website_url">Website URL (leave blank if you do not have one yet)</label>
+                                    <input type="text" name="website_url" id="website_url" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="other_services">Services Needed?</label> <small class="required">*  <i>min length of 10</i></small>
+                                    <textarea name="services" id="services" cols="30" rows="10" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="website_budget">Website Budget</label> <small class="required">*</small>
+                                    <select name="website_budget" id="website_budget" class="form-control">
+                                        <option value=""></option>
+                                        <option value="2500-3500">$2,500 - $3,500</option>
+                                        <option value="3500-5000">$3,500 - $5,000</option>
+                                        <option value="5000-7500">$5,000 - $7,500</option>
+                                        <option value="7500-10000">$7,500 - $10,000</option>
+                                        <option value="10000-15000">$10,000 - $15,000</option>
+                                        <option value="15000-20000">$15,000 - $20,000</option>
+                                        <option value="20000-30000">$20,000 - $30,000</option>
+                                        <option value="30000-40000">$30,000 - $40,000</option>
+                                        <option value="40000-50000">$40,000 - $50,000</option>
+                                        <option value="50000-75000">$50,000 - $75,000</option>
+                                        <option value="75000-100000">$75,000 - $100,000</option>
+                                        <option value="100000+"></option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="monthly_budget">Ongoing Monthly Budget</label> <small class="required">*</small>
+                                    <select name="monthly_budget" id="" class="form-control">
+                                        <option value=""></option>
+                                        <option value="None">None</option>
+                                        <option value="250-500">$250-$500</option>
+                                        <option value="500-1000">$500-$1,000</option>
+                                        <option value="1000-2000">$1,000-$2,000</option>
+                                        <option value="2000-3000">$2,000-$3,000</option>
+                                        <option value="3000-4000">$3000-$4000</option>
+                                        <option value="4000-5000">$4000-$5000</option>
+                                        <option value="5000">$5000+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="details">Project Details</label> <small class="required">* <i>min length of 10</i></small>
+                                    <textarea name="details" id="details" cols="30" rows="10" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="contact">How do you want us to contact you?</label> <span class="required">*</span> <br>
+                                    <input type="radio" name="contact" id="both" value="Both"> <label for="both">Both</label> <br>
+                                    <input type="radio" name="contact" id="phone_contact" value="Phone"> <label for="phone_contact">Phone</label> <br>
+                                    <input type="radio" name="contact" id="email_contact" value="Email"> <label for="email_contact">Email</label> <br>
+                                </div>
+                            </div>
+                            <div class="text-center mb-5">
+                                <input type="submit" value="Submit" id="quote_submit" class="btn btn-info btn-lg">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

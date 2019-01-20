@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/static/theme/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/theme/css/now-ui-kit.min.css">
+    <link rel="stylesheet" href="/static/assets/css/app.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/assets/js/Textillate/animate.css">
+    <link rel="shortcut icon" href="/static/assets/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/static/assets/js/GridGallery/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/js/GridGallery/css/component.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    
+    <title>{% block title %} WebKyt Development Systems {% endblock %}</title>
+  </head>
+  <body>
+    {% include 'partials/_navbar.html' %}
+    {% block content %} {% endblock %}
+    {% include 'partials/_footer.html' %}
+    <script src="/static/theme/js/core/jquery.min.js"></script>
+    <script src="/static/theme/js/core/popper.min.js"></script>
+    <script src="/static/theme/js/core/bootstrap.min.js"></script>
+    <script src="/static/assets/js/GridGallery/js/modernizr.custom.js"></script>
+    <script src="/static/theme/js/now-ui-kit.min.js"></script>
+    <script src="/static/assets/js/app.js"></script>
+    <script src="/static/assets/js/GridGallery/js/imagesloaded.pkgd.min.js"></script>
+		<script src="/static/assets/js/GridGallery/js/masonry.pkgd.min.js"></script>
+		<script src="/static/assets/js/GridGallery/js/classie.js"></script>
+    <script src="/static/assets/js/GridGallery/js/cbpGridGallery.js"></script>
+    <script src="/static/assets/js/Textillate/jquery.textillate.js"></script>
+    <script src="/static/assets/js/Textillate/jquery.lettering.js"></script>
+    <script src="/static/assets/js/Textillate/jquery.fittext.js"></script>
+    <script src="/static/assets/js/text.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>new CBPGridGallery( document.getElementById( 'grid-gallery' ) );</script>
+    <script>AOS.init();</script>
+  </body>
+</html>

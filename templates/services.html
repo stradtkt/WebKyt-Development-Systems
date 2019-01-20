@@ -1,0 +1,116 @@
+{% extends 'layout.html' %}
+{% block title %} Skills and Services Provided By WebKyt Development Systems | Freelancer Cincinnati Ohio |  {{super()}} {% endblock %}
+{% block content %}
+
+
+<section class="Services" data-type="background" data-speed="3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="header-box">
+                    <h1 class="text-center header-h1 services-tlt-h1">Services Provided By WebKyt</h1>
+                    <p class="text-center header-p services-tlt-p">Web Development &amp; Full Stack Development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="Skills" class="mt-5 mb-5">
+    <div class="container">
+        {% for skill in skills %}
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-5 mb-5">
+                    <div class="skills card p-3">
+                        <div class="card-header">
+                            <h3 class="text-center">Languages For Development</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="lang text-center">
+                                <p>
+                                    <a href="" class="btn btn-info btn-round">{{skill.languages[0]}}</a> <br>
+                                    C# is used to make software and web apps.  These web apps can also be known as websites.  It is a powerful language and it is meant to process information at high speeds.
+                                </p>
+                            </div>
+                            <div class="lang text-center">
+                                <p>
+                                    <a href="" class="btn btn-info btn-round">{{skill.languages[1]}}</a> <br>
+                                    Python is a great language to use whether you want to build a chart with matplotlib or build a web app with Flask or Django.  Python is meant to run at fast speeds and it provides great results.
+                                </p>
+                            </div>
+                            <div class="lang text-center">
+                                <p>
+                                    <a href="" class="btn btn-info btn-round">{{skill.languages[2]}}</a> <br>
+                                    SQL also know as Structured Query Language is a language for the database.  You use SQL in what ever GUI (Graphical User Interface) to perform tasks that makes CRUD operations on the database.
+                                </p>
+                            </div>
+                            <div class="lang text-center">
+                                <p>
+                                    <a href="" class="btn btn-info btn-round">{{skill.languages[3]}} &amp; jQuery</a> <br>
+                                    JavaScript and jQuery can be used together to provide functional applications.  They can add interactivity to the website, and do things on a web page that your never thought could happen.
+                                    You can make a whole app without having a back-end technology using JavaScript and jQuery.
+                                </p>
+                            </div>
+                            <div class="lang text-center">
+                                <p>
+                                    <a href="" class="btn btn-info btn-round">Django</a> <br>
+                                    Django is a CMS this is used to make fast and powerful web apps.  You can make a blog, e-commerce store, a REST-ful API and much more.  You would use SQLite as the database, or you could migrate to MySQL.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-5 mb-5">
+                    <div class="skills card p-3">
+                        <div class="card-header">
+                            <h3 class="text-center">Web Services</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="web text-center">
+                                <p>
+                                    <a href="" class="btn btn-info btn-round">Amazon Web Services | Hosting</a> <br>
+                                    Websites that use Python and C# would be hosted on a Amazon Web Server.  Amazon is a sturdy company and they never have problems when in regards to other peoples web hosting plans.
+                                    Using Python or C# requires a more powerful server that can hold and compile that type of code.  Hosting companies like Godaddy can provide you with the domain and then we can link that domain with 
+                                    the Amazon Web Server.
+                                </p>
+                            </div>
+                            <div class="web text-center">
+                                <p>
+                                    <a href="" class="btn btn-info btn-round">API Integration</a> <br>
+                                    There are many API's out there that you pick from.  Such as: <br>
+                                    <h4>Google Api</h4>
+                                    <ul class="nav">
+                                        <li class="nav-item"><a href="https://developers.google.com/chart/" class="nav-link" target="_blank">Google Charts</a></li>
+                                        <li class="nav-item"><a href="https://developers.google.com/calendar/" class="nav-link" target="_blank">Google Calendar</a></li>
+                                        <li class="nav-item"><a href="https://developers.google.com/fonts/" class="nav-link" target="_blank">Google Fonts</a></li>
+                                        <li class="nav-item"><a href="https://developers.google.com/gmail/" class="nav-link" target="_blank">Gmail</a></li>
+                                        <li class="nav-item"><a href="https://developers.google.com/maps/documentation/javascript/tutorial" class="nav-link" target="_blank">Google Maps</a></li>
+                                        <li class="nav-item"><a href="https://developers.google.com/youtube/" class="nav-link" target="_blank">YouTube</a></li>
+                                    </ul>
+                                    <h4>jQuery Plugins</h4>
+                                    <ul class="nav">
+                                        <li class="nav-item"><a href="http://vodkabears.github.io/vide/" class="nav-link" target="_blank">Vide</a></li>
+                                        <span>Popular video background plugin.</span>
+                                        <li class="nav-item"><a href="http://nitinhayaran.github.io/Justified.js/demo/index.html" class="nav-link" target="_blank">Justified.js</a></li>
+                                        <span>A simple image gallery that you can share all your favorite photos.</span>
+                                        <li class="nav-item"><a href="http://www.thepetedesign.com/demos/shuffle-images_demo.html" class="nav-link" target="_blank">JQuery Shuffle Images</a></li>
+                                        <span>Shuffle your images on hover and can link to another site or another page.</span>
+                                        <li class="nav-item"><a href="http://textillate.js.org/" class="nav-link" target="_blank">textillate.js</a></li>
+                                        <span>Add custom animations to your text items on the page.  Great for interactivity.</span>
+                                        <li class="nav-item"><a href="http://fittextjs.com/" class="nav-link" target="_blank">FitText</a></li>
+                                        <span>FitText makes font-sizes flexible.</span>
+                                        <li class="nav-item"><a href="https://www.chartjs.org/" class="nav-link" target="_blank">Chart.js</a></li>
+                                        <span>Build graphs that fit on all devices.</span>
+                                    </ul>
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}
