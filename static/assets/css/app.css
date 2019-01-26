@@ -201,3 +201,32 @@ section footer .nav li a:hover {
 .services-tlt-h1 {
     color: white;
 }
+div.resume {
+    margin: 20px 0;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 3px 3px 5px rgba(50,50,50,0.7);
+    -webkit-box-shadow: 3px 3px 5px rgba(50,50,50,0.7);
+    -moz-box-shadow: 3px 3px 5px rgba(50,50,50,0.7);
+    -ms-box-shadow: 3px 3px 5px rgba(50,50,50,0.7);
+    -o-box-shadow: 3px 3px 5px rgba(50,50,50,0.7);
+}
+.resume h1 {
+    color: dodgerblue;
+    font-size: 110%;
+}
+.resume .card-body {
+    font-size: 90%;
+    color: #666;
+    font-weight: 700;
+}
+.resume .card-body img {
+    margin-bottom: 10px;
+}
+.resume .card-footer {
+    font-weight: 700;
+    color: green;
+}

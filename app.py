@@ -131,5 +131,24 @@ def quote():
     elif request.method == "GET":
         return render_template('quote.html')
 
+@app.route('/resume', methods=['GET'])
+def resume():
+    resume = [
+        {'title': 'Coding Dojo Bootcamp', 'img': 'coding-dojo.png', 'img_alt': 'Coding Dojo Bootcamp', 'desc': '20 week course became certified in Python and C#.  Including all of the languages frameworks.', 'footer': 'Completed in August of 2018'},
+        {'title': 'Applied Machine Learning in Python', 'img': 'machine.png', 'img_alt': 'University of Michigan Applied Machine Learning', 'desc': 'Applied machine learning taught me valuable skills in Python data science and key concepts in machine learning.', 'footer': 'Completed in December of 2018'},
+        {'title': 'Applied Social Network Analysis in Python', 'img': 'social.png', 'img_alt': 'University of Michigan Social Network Analysis in Python', 'desc': 'This course teaches you how there is a relevance between social analytics and your everyday life.', 'footer': 'Completed in December of 2018'},
+        {'title': 'Applied Text Mining in Python', 'img': 'text.png', 'img_alt': 'University of Michigan Applied Text Mining in Python', 'desc': 'This couse teaches you how to manipulate text with algorithms in Python.', 'footer': 'Completed in December of 2018'},
+        {'title': 'Applied Machine Learning in Python', 'img': 'machine.png', 'img_alt': 'University of Michigan Applied Machine Learning', 'desc': 'Applied machine learning taught me valuable skills in Python data science and key concepts in machine learning.', 'footer': 'Completed in December of 2018'},
+        {'title': 'Applied Social Network Analysis in Python', 'img': 'social.png', 'img_alt': 'University of Michigan Social Network Analysis in Python', 'desc': 'This course teaches you how there is a relevance between social analytics and your everyday life.', 'footer': 'Completed in December of 2018'},
+        {'title': 'Applied Text Mining in Python', 'img': 'text.png', 'img_alt': 'University of Michigan Applied Text Mining in Python', 'desc': 'This couse teaches you how to manipulate text with algorithms in Python.', 'footer': 'Completed in December of 2018'},
+        {'title': 'Applied Social Network Analysis in Python', 'img': 'social.png', 'img_alt': 'University of Michigan Social Network Analysis in Python', 'desc': 'This course teaches you how there is a relevance between social analytics and your everyday life.', 'footer': 'Completed in December of 2018'},
+        {'title': 'Applied Text Mining in Python', 'img': 'text.png', 'img_alt': 'University of Michigan Applied Text Mining in Python', 'desc': 'This couse teaches you how to manipulate text with algorithms in Python.', 'footer': 'Completed in December of 2018'},
+        # {'title': '', 'img': '', 'img_alt': '', 'desc': '', 'footer': ''},
+        # {'title': '', 'img': '', 'img_alt': '', 'desc': '', 'footer': ''},
+        # {'title': '', 'img': '', 'img_alt': '', 'desc': '', 'footer': ''},
+        # {'title': '', 'img': '', 'img_alt': '', 'desc': '', 'footer': ''},
+    ]
+    return render_template('resume.html', resume=resume)
+
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
