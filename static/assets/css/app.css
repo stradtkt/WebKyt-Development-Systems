@@ -59,7 +59,7 @@ body {
 .header-p,
 .header-h1 {
     font-weight: 800;
-    color: dodgerblue;
+    color: whitesmoke;
 }
 
 .contact-header-p,
@@ -114,6 +114,15 @@ video {
     -moz-box-shadow: 3px 3px 5px rgba(50,50,50,1);
     -ms-box-shadow: 3px 3px 5px rgba(50,50,50,1);
     -o-box-shadow: 3px 3px 5px rgba(50,50,50,1);
+}
+.home.card:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.9);
+    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.9);
+    -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.9);
+    -ms-box-shadow: 5px 5px 10px rgba(0,0,0,0.9);
+    -o-box-shadow: 5px 5px 10px rgba(0,0,0,0.9);
+    transition: all 0.4s ease-in-out;
 }
 .web .nav,
 section footer .nav {
