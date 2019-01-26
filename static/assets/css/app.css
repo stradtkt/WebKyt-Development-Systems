@@ -67,20 +67,6 @@ body {
     position: relative;
     top: 100px;
 }
-#About .card {
-    background: rgba(47, 59, 75, 0.5);
-    color: white;
-    border-radius: 6px !important;
-    -webkit-border-radius: 6px !important;
-    -moz-border-radius: 6px !important;
-    -ms-border-radius: 6px !important;
-    -o-border-radius: 6px !important;
-    box-shadow: 3px 3px 5px rgba(50,50,50,1) !important;
-    -webkit-box-shadow: 3px 3px 5px rgba(50,50,50,1) !important;
-    -moz-box-shadow: 3px 3px 5px rgba(50,50,50,1) !important;
-    -ms-box-shadow: 3px 3px 5px rgba(50,50,50,1) !important;
-    -o-box-shadow: 3px 3px 5px rgba(50,50,50,1) !important;
-}
 #footer {
     background: #2F3B4B;
 }
@@ -114,6 +100,7 @@ video {
 .required {
     color: red;
 }
+.home,
 .skills {
     background: rgba(47, 59, 75, 0.5);
     color: white;
@@ -191,6 +178,7 @@ section footer .nav li a:hover {
     transition: all 0.6s ease-in-out;
     transition-delay: .1s;
 }
+.home div p,
 .skills .lang p,
 .skills .web p {
     font-size: 90%;

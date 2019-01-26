@@ -26,6 +26,7 @@ def portfolio():
             {'name': 'CCRS', 'url': 'http://helprepaircredit.com', 'desc': 'This is for a credit repair company, this is a basic layout with no back-end functionality', 'img': 'ccrs.png', 'video': 'ccrs-1.mp4', 'languages': ['PHP', 'JavaScript', 'Bootstrap', 'CSS', 'HTML'], 'tag': 'JavaScript'},
             {'name': 'Phrase Hunter', 'url': 'NA', 'desc': 'Phrase hunter is depicting a game show where players would need to guess what the phrase is in a limited amout of misses', 'img': 'phrase.png', 'video': 'phrase-1.mp4', 'languages': ['JavaScript', 'jQuery', 'Bootstrap', 'CSS', 'HTML'], 'tag': 'JavaScript'},
             {'name': 'Job Directory', 'url': 'https://github.com/stradtkt/JobDirectory-Django', 'desc': 'Find a job, add a job, apply for a job with a detailed dashboard', 'img': 'job.png', 'video': 'job-1.mp4', 'languages': ['Python', 'Django', 'JavaScript', 'Bootstrap', 'CSS'], 'tag': ['Python', 'Django']},
+            {'name': 'Tic-Tac-Toe', 'url': 'https://github.com/stradtkt/treehouse_javascript_project_4--TicTacToe', 'desc': 'Play a friendly game of tic tac toe with someone or yourself', 'img': 'tic.jpg', 'video': 'tic-1.mp4', 'languages': ['JavaScript', 'jQuery', 'Bootstrap', 'CSS', 'HTML'], 'tag': 'JavaScript'},
     ]
     return render_template('portfolio.html', portfolios=portfolios)
 
