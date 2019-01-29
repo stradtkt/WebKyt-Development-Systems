@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+{% block title %} Testimonials | {{super()}} {% endblock %}
+{% block content %}
+
+<section class="Contact" data-type="background" data-speed="3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h1 class="text-center contact-header-h1" data-aos="zoom-out-down" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">Testimonials</h1>
+                <p class="text-center contact-header-p" data-aos="fade-left" data-aos-offset="200" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">Web Development &amp; Full Stack Development</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-md-12">
+            <div id="testimonial-slider" class="owl-carousel">
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="/static/assets/img/background-1-1.jpg">
+                    </div>
+                    <div class="testimonial-profile">
+                        <h3 class="title">williamson</h3>
+                        <span class="post">Web Developer</span>
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="/static/assets/img/background-2-2.jpg">
+                    </div>
+                    <div class="testimonial-profile">
+                        <h3 class="title">Kristina</h3>
+                        <span class="post">Web Designer</span>
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="/static/assets/img/background-1-1.jpg">
+                    </div>
+                    <div class="testimonial-profile">
+                        <h3 class="title">Steve Thomas</h3>
+                        <span class="post">Web Developer</span>
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
