@@ -266,7 +266,7 @@ div.resume {
 }
 .testimonial .description{
     padding: 20px 22px;
-    background: #1f487e;
+    background: dodgerblue;
     font-size: 15px;
     color: #fff;
     line-height: 25px;
@@ -301,7 +301,11 @@ div.resume {
     content: "\f053";
     font-family: "Font Awesome 5 Free"; font-weight: 900;
     font-size: 20px;
-    color: #1f487e;
+    color: whitesmoke;
+    border-radius: 50%;
+}
+.owl-theme .owl-controls .owl-buttons div {
+    background: dodgerblue;
 }
 .owl-next:before{ content: "\f054"; }
 

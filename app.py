@@ -134,9 +134,12 @@ def quote():
 @app.route('/testimonials', methods=['GET'])
 def testimonials():
     testimonial = [
-        {},
-        {},
-        {},
+        {'name': 'Debra', 'job': 'Project Manager', 'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus voluptatum vel recusandae laborum atque deleniti consectetur saepe in tempore, ad, sed ab temporibus velit modi! At dolorem laboriosam deleniti commodi. Fugiat expedita veniam molestias distinctio deserunt esse soluta assumenda, dolorum corrupti itaque magnam? Modi molestiae quam vitae deserunt commodi?', 'img': 'emily.jpg'},
+        {'name': 'Debra', 'job': 'Project Manager', 'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus voluptatum vel recusandae laborum atque deleniti consectetur saepe in tempore, ad, sed ab temporibus velit modi! At dolorem laboriosam deleniti commodi. Fugiat expedita veniam molestias distinctio deserunt esse soluta assumenda, dolorum corrupti itaque magnam? Modi molestiae quam vitae deserunt commodi?', 'img': 'emily.jpg'},
+        {'name': 'Debra', 'job': 'Project Manager', 'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus voluptatum vel recusandae laborum atque deleniti consectetur saepe in tempore, ad, sed ab temporibus velit modi! At dolorem laboriosam deleniti commodi. Fugiat expedita veniam molestias distinctio deserunt esse soluta assumenda, dolorum corrupti itaque magnam? Modi molestiae quam vitae deserunt commodi?', 'img': 'emily.jpg'},
+        {'name': 'Debra', 'job': 'Project Manager', 'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus voluptatum vel recusandae laborum atque deleniti consectetur saepe in tempore, ad, sed ab temporibus velit modi! At dolorem laboriosam deleniti commodi. Fugiat expedita veniam molestias distinctio deserunt esse soluta assumenda, dolorum corrupti itaque magnam? Modi molestiae quam vitae deserunt commodi?', 'img': 'emily.jpg'},
+        {'name': 'Debra', 'job': 'Project Manager', 'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus voluptatum vel recusandae laborum atque deleniti consectetur saepe in tempore, ad, sed ab temporibus velit modi! At dolorem laboriosam deleniti commodi. Fugiat expedita veniam molestias distinctio deserunt esse soluta assumenda, dolorum corrupti itaque magnam? Modi molestiae quam vitae deserunt commodi?', 'img': 'emily.jpg'},
+        {'name': 'Debra', 'job': 'Project Manager', 'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus voluptatum vel recusandae laborum atque deleniti consectetur saepe in tempore, ad, sed ab temporibus velit modi! At dolorem laboriosam deleniti commodi. Fugiat expedita veniam molestias distinctio deserunt esse soluta assumenda, dolorum corrupti itaque magnam? Modi molestiae quam vitae deserunt commodi?', 'img': 'emily.jpg'},
     ]
     return render_template("testimonials.html", testimonial=testimonial)
 

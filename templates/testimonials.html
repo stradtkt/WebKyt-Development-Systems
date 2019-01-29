@@ -17,42 +17,20 @@
     <div class="row mt-5 mb-5">
         <div class="col-md-12">
             <div id="testimonial-slider" class="owl-carousel">
-                <div class="testimonial">
-                    <div class="pic">
-                        <img src="/static/assets/img/background-1-1.jpg">
+                {% for t in testimonial %}
+                    <div class="testimonial">
+                        <div class="pic">
+                            <img src="/static/theme/img/{{t.img}}">
+                        </div>
+                        <div class="testimonial-profile">
+                            <h3 class="title">{{t.name}}</h3>
+                            <span class="post">{{t.job}}</span>
+                        </div>
+                        <p class="description">
+                            {{t.description}}
+                        </p>
                     </div>
-                    <div class="testimonial-profile">
-                        <h3 class="title">williamson</h3>
-                        <span class="post">Web Developer</span>
-                    </div>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
-                    </p>
-                </div>
-                <div class="testimonial">
-                    <div class="pic">
-                        <img src="/static/assets/img/background-2-2.jpg">
-                    </div>
-                    <div class="testimonial-profile">
-                        <h3 class="title">Kristina</h3>
-                        <span class="post">Web Designer</span>
-                    </div>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
-                    </p>
-                </div>
-                <div class="testimonial">
-                    <div class="pic">
-                        <img src="/static/assets/img/background-1-1.jpg">
-                    </div>
-                    <div class="testimonial-profile">
-                        <h3 class="title">Steve Thomas</h3>
-                        <span class="post">Web Developer</span>
-                    </div>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
-                    </p>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
