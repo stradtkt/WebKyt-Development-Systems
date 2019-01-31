@@ -144,4 +144,4 @@ def testimonials():
     return render_template("testimonials.html", testimonial=testimonial)
 
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    app.run()
