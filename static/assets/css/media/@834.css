@@ -1,0 +1,22 @@
+@media only screen and (max-width: 835px) {
+    .navbar-toggler span.navbar-toggler-bar.bar3,
+    .navbar-toggler span.navbar-toggler-bar.bar1 {
+        position: relative;
+        right: 6px;
+    }
+    .navbar-toggler span.navbar-toggler-bar.bar2 {
+        position: relative;
+        right: 3px;
+    }
+    .collapse.navbar-collapse.show::before {
+        background: linear-gradient(120deg, navy, dodgerblue);
+        background: -webkit-linear-gradient(120deg, navy, dodgerblue);
+        background: -moz-linear-gradient(120deg, navy, dodgerblue);
+        background: -o-linear-gradient(120deg, navy, dodgerblue);
+    }
+    .services-tlt-h1,
+    .contact-header-h1,
+    .home-tlt-h1 {
+        font-size: 35px;
+    }
+}

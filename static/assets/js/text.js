@@ -1,6 +1,6 @@
 $(function() {
     $('.services-tlt-h1').textillate({
-        loop: true,
+        loop: false,
         minDisplayTime: 2000,
         initialDelay: 0,
         inEffects: [],
@@ -27,7 +27,7 @@ $(function() {
         type: 'char'
     });
     $('.services-tlt-p').textillate({
-        loop: true,
+        loop: false,
         minDisplayTime: 875,
         initialDelay: 0,
         inEffects: [],
